@@ -6,12 +6,12 @@ margin: 0;
 box-sizing: border-box;
 background: #191919;
     background-size: cover;
-    background-position: center;
+   
     font-family: sans-serif;
 }
 .menu-bar{
-background: #3498db;
-text-align: center;
+background:  #191919;
+text-align: left;
 }
 .menu-bar ul{
 display: inline-flex;
@@ -29,7 +29,7 @@ color:#fff;
 }
 .active,.menu-bar ul li:hover{
 background:#2ecc71;
-border-radius: 3px;
+border-radius: 5px;
 }
 .menu-bar .fa{
     margin-right:8px;
@@ -40,8 +40,8 @@ border-radius: 3px;
 .menu-bar ul li:hover  .sub-menu{
 display: block;
 position: absolute;
-background:   #3498db;
-margin-top: 1px;
+background:   #2ecc71;
+margin-top: 25px;
 margin-left: 15px;
 
 }
@@ -51,8 +51,8 @@ margin-left: 15px;
 .menu-bar ul li:hover  .sub-menu1{
 display: block;
 position: absolute;
-background: #3498db;
-margin-top: 1px;
+background: #2ecc71;
+margin-top: 25px;
 margin-left: 15px;
 
 }
@@ -106,4 +106,44 @@ margin-left: 15px;
   .box input[type = "submit"]:hover{
     background: #2ecc71;
   }
-  
+  .search-box{
+    text-align: left;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    transform: translate(-50%,-50%);
+    background: #2ecc71;
+    height:40px;
+    border-radius: 40px;
+    padding:10px;
+  }
+  .search-btn{
+    color:#fff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color:white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+  }
+  .search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+  }
+  .search-box:hover > .search-btn{
+    background: #3498db;
+  }
